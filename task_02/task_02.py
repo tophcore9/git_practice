@@ -1,7 +1,11 @@
 from datetime import datetime
 
 def convert_date(date: str) -> str:
-    return 0
+    try:
+        date_obj = datetime.strptime(date, '%d/%m/%Y')
+        return date_obj.strftime('%Y-%m-%d')
+    except ValueError:
+        return "Error: Invalid date."
 
 
 print("Example:")
