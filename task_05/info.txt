@@ -1,0 +1,13 @@
+NUMBER LENGTH
+
+Тобі дано невід'ємне ціле число. Визнач, скільки цифр воно має.
+
+Вхідні дані: Невід'ємне ціле число.
+
+Вихідні дані: Ціле число.
+
+Приклади:
+    assert number_length(10) == 2
+    assert number_length(0) == 1
+    assert number_length(4) == 1
+    assert number_length(44) == 2
