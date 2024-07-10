@@ -1,5 +1,10 @@
 def reverse_digits(num: int) -> int:
-    return 0
+    if num < 0:
+        reversed_num = -int(str(-num)[::-1])
+    else:
+        reversed_num = int(str(num)[::-1])
+    
+    return reversed_num
 
 print("Example:")
 print(reverse_digits(32))
