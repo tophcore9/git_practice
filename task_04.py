@@ -1,5 +1,9 @@
 def checkio(words: str) -> bool:
-    return 0
+    words_list = words.split()
+    for i in range(len(words_list) - 2):
+        if words_list[i].isalpha() and words_list[i+1].isalpha() and words_list[i+2].isalpha():
+            return True
+    return False
 
 
 print("Example:")
