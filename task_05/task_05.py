@@ -1,5 +1,5 @@
 def number_length(value: int) -> int:
-    return 0
+    return len(str(abs(value)))
 
 
 print("Example:")
